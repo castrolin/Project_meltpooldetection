@@ -9,6 +9,8 @@ net = selforgmap([dimension1 dimension2]);
 % Trianing parameter setup
 net.trainParam.epochs = 1000;
 
+
+
 % Train the Network
 [net,tr] = train(net,inputs);
 

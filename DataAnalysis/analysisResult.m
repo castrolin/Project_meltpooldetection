@@ -45,5 +45,6 @@ for k=1:7
     scatter(dimesion(k,1,:),dimesion(k,2,:));hold on
 end
 figure,scatter([D.shape(1:end).Length],[D.shape(1:end).Width])
+%% time series wiht oscillation
 figure,plot((1:size([D.shape(1:end).Ratio],2))/fps,[D.shape(1:end).Ratio])
 end

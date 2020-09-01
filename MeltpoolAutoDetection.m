@@ -3,12 +3,13 @@
 % Date: 2020/05/07
 % work progress
 % 2020/07/27: Analysis defects video
+% 2020/08/15: Analysis layerchage video 20 to 160
 % @Creator: CastroLin
 % %%%%%%%%%%%%%%%%
 clc,clear
 close all
 %% Input the video file
-obj=VideoReader('E:\NCKU_experimental\defects\result_video\keyhole_3.avi'); %讀檔
+obj=VideoReader('E:\NCKU_experimental\defects\layerthickness_change\160um.avi'); %讀檔
 nFrames =obj.numberOfFrames;%　nframes 為影片禎數
 vidHeight = obj.Height;
 vidWidth = obj.Width;
@@ -26,10 +27,10 @@ for k = 1 : nFrames/n
     k
 end
 el = 10000;
-x1 = 31;y1 = 181;
-x3 = 4;y3 = 313;
-x7 = 490;y7 = 193;
-x9 = 479;y9 = 332;
+x1 = 3;y1 = 84;
+x3 = 3;y3 = 365;
+x7 = 510;y7 = 96;
+x9 = 510;y9 = 379;
 pl = el/(x7-x1);
 %% detect the transforming Image size
 zeroI = TransImage((mov(1).cdata),x1,y1,x3,y3,x7,y7,x9,y9);
